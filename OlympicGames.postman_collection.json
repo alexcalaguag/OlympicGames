@@ -1,0 +1,121 @@
+{
+	"id": "0b4a71a2-2c4b-acd8-687a-9f1e32c4974e",
+	"name": "OlympicGames",
+	"description": "",
+	"order": [
+		"89c00acf-7567-21b6-2dd5-c3eee3948df8",
+		"86cc292b-14af-f09a-f6d3-04fddedc5e1c",
+		"0b2b380d-ccc0-cccf-07c5-7473d7cce14c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1506625097925,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0b2b380d-ccc0-cccf-07c5-7473d7cce14c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/olympicgames/rest/competitions/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506919386567,
+			"name": "Get All Competitions",
+			"description": "",
+			"collectionId": "0b4a71a2-2c4b-acd8-687a-9f1e32c4974e",
+			"responses": [],
+			"rawModeData": "{\n\"id\" :7,\n\"modality\":\"Box\",\n\"local\" : \"Rio Janeiro\",\n\"datehour\" : \"1980-08-14\",\n\"team\" : \"Brasil\",\n\"opponent\" : \"Peru\",\n\"stage\" : \"Derby\"\n}\n"
+		},
+		{
+			"id": "86cc292b-14af-f09a-f6d3-04fddedc5e1c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/olympicgames/rest/competitions/?modality=Futebol",
+			"queryParams": [
+				{
+					"key": "modality",
+					"value": "Futebol",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506919383700,
+			"name": "Get Competitions by Modality",
+			"description": "",
+			"collectionId": "0b4a71a2-2c4b-acd8-687a-9f1e32c4974e",
+			"responses": [],
+			"rawModeData": "{\n\"id\" :7,\n\"modality\":\"Box\",\n\"local\" : \"Rio Janeiro\",\n\"datehour\" : \"1980-08-14\",\n\"team\" : \"Brasil\",\n\"opponent\" : \"Peru\",\n\"stage\" : \"Derby\"\n}\n"
+		},
+		{
+			"id": "89c00acf-7567-21b6-2dd5-c3eee3948df8",
+			"headers": "Content-Type: application/json\nmodality: Volei\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "modality",
+					"value": "Volei",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/olympicgames/rest/competition/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506919380588,
+			"name": "Create Competition",
+			"description": "",
+			"collectionId": "0b4a71a2-2c4b-acd8-687a-9f1e32c4974e",
+			"responses": [],
+			"rawModeData": "{\n\"modality\":\"Futebol\",\n\"local\" : \"Estadio Maracana\",\n\"dateOfCompetition\" :\"2017-10-10\",\n\"startTimeCompetition\" :\"15:30:00\",\n\"endTimeCompetition\" :\"16:00:00\",\n\"team\" : \"Peru\",\n\"opponent\" : \"Brasil\",\n\"stage\" : \"Final\"\n}\n"
+		}
+	]
+}
